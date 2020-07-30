@@ -19,3 +19,4 @@ handle extracting the pocket of the drug
 COVID19_pocket_prepration.py:
 handle extracting the pocket COVID19
 
+example of Fpocket results are in the zip files for COVID19 and Drug proteins structures
