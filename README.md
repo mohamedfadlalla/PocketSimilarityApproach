@@ -13,9 +13,9 @@ dependancies:
 2. Pandas
 3. Numpy
 
-aa_pdb_drugs:
+Drug_pocket_prepration.py:
 handle extracting the pocket of the drug
 
-script2:
+COVID19_pocket_prepration.py:
 handle extracting the pocket COVID19
 
