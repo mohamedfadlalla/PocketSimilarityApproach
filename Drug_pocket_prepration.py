@@ -15,9 +15,10 @@ if os.name == 'nt':
 else:
 	HOME = Path('/content/PocketSimilarityApproach')
 
-path = HOME / Path('Approve_drugs_fpocket_results_example')
-orginal_path = HOME / Path('orginal_pdbs')
+path = HOME / Path('DrugPocket')
+orginal_path = HOME / Path('OrginalPDBs')
 het = HOME / Path('HET_of_approved_drugs.txt')
+
 pdb_pockets = HOME / Path('results')
 
 with open(het,'r') as f:
