@@ -4,10 +4,18 @@ import numpy as np
 import pandas as pd
 import os
 
-path = Path(input('enter the directory of Fpocket output folders: '))
-orginal_path = Path(input('enter the directory of orginal pdbs: '))
-het = Path(input('enter file path of HET code list: '))
-pdb_pockets = Path(input('enter the empty where you want the pockets of the drugs: '))
+
+import warnings
+from Bio import BiopythonWarning
+warnings.simplefilter('ignore', BiopythonWarning)
+
+
+HOME = Path(r'C:\Users\Mohamed\jupyter_notebooks\researches\biosolveit_project\PocketSimilarityApproach')
+
+path = HOME / Path('Approve_drugs_fpocket_results_example')
+orginal_path = HOME / Path('orginal_pdbs')
+het = HOME / Path('HET_of_approved_drugs.txt')
+pdb_pockets = HOME / Path('results')
 
 with open(het,'r') as f:
 	drugs_het = f.read().split(',')

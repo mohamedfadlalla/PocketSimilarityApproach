@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : -0.0514
+HEADER 1  - Drug Score                        : 0.0541
+HEADER 2  - Number of alpha spheres           :    27
+HEADER 3  - Mean alpha-sphere radius          : 4.2101
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5943
+HEADER 5  - Mean B-factor of pocket residues  : 0.3914
+HEADER 6  - Hydrophobicity Score              : 39.2857
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 4.2857
+HEADER 9  - Pocket volume (Monte Carlo)       : 213.1239
+HEADER 10  -Pocket volume (convex hull)       : 2.3706
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 20.0000
+HEADER 13 - Number of apolar alpha sphere     :    21
+HEADER 14 - Proportion of apolar alpha sphere : 0.7778
+ATOM   2176  CE2 PHE A 284       7.069   6.204 -18.687  0.00  0.00           C 0
+ATOM   2131   CA HIS A 280       5.683  10.672 -17.598  0.00  0.00           C 0
+ATOM   1092   CB PRO A 150       6.393   3.933 -15.227  0.00  0.00           C 0
+ATOM   1093   CG PRO A 150       7.420   4.965 -14.817  0.00  0.00           C 0
+ATOM   2134   CB HIS A 280       4.351  10.650 -18.336  0.00  0.00           C 0
+ATOM   1079    O GLY A 148       5.409   7.165  -9.703  0.47  1.07           O 0
+ATOM   1094   CD PRO A 150       7.087   5.346 -13.368  0.00  0.00           C 0
+ATOM   2109  CG2 VAL A 276      -0.595  10.162 -12.842  0.00  0.00           C 0
+ATOM   2126   CB MET A 279       5.907  10.851 -13.019  0.00  0.00           C 0
+ATOM   2127   CG MET A 279       6.868   9.662 -12.778  0.00  0.00           C 0
+ATOM   2108  CG1 VAL A 276      -0.205  10.323 -15.263  0.00  0.00           C 0
+ATOM   2104   CA VAL A 276       1.138  11.807 -13.671  0.00  0.00           C 0
+ATOM   2106    O VAL A 276       2.645  11.768 -15.511  0.00  0.00           O 0
+ATOM   2130    N HIS A 280       5.531  11.252 -16.245  0.00  0.00           N 0
+ATOM   2125    O MET A 279       7.669  10.751 -15.724  0.00  0.00           O 0
+ATOM   2136  ND1 HIS A 280       4.329   8.774 -20.017  0.00  0.00           N 0
+ATOM   2100  CE2 TYR A 275       3.510  10.256  -9.816  0.00  0.00           C 0
+TER
+END
