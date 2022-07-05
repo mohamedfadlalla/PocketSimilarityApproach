@@ -186,7 +186,11 @@ df = pd.read_csv('Drugs.csv')
 df.dropna(subset = ['cls pocket'], inplace=True)
 
 for index, row in df.iterrows():
-	protein_name = row.Name +'_' + row.Drug + '_out' 
+	## Old file nameing
+	# protein_name = row.Name +'_' + row.Drug + '_out' 
+	# pocket_name = row['cls pocket']
+	## New file nameing
+	protein_name = row.Name + '_out' 
 	pocket_name = row['cls pocket']
 	print(protein_name)
 	try:
