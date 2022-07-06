@@ -2,6 +2,10 @@ from Bio.PDB import Select, PDBParser, PDBIO
 from pathlib import Path
 import os
 
+import warnings
+from Bio import BiopythonWarning
+warnings.simplefilter('ignore', BiopythonWarning)
+
 path = Path(input('input the dirctory of Fpocket results: '))
 out = Path(input('enter the emity dirctory of the out put: '))
 
@@ -32,8 +36,12 @@ def aa_pdb(pocket):
 ######################################################################
 os.chdir(path)
 mainlist = os.listdir()
+try: 
+  mainist.remove('')
+except:
+  pass
 for protein in mainlist:
-	name = protein[:6]
+	name = protein.split('_')[0]
 	os.chdir(path / protein / 'pockets')
 	pockets = list(a for a in os.listdir() if a.endswith('.pdb')) 
 	for pocket in pockets:

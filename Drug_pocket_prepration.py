@@ -84,6 +84,10 @@ def aa_pdb(pocket, protein_name):
 
 os.chdir(path)
 pdblst = os.listdir()
+try:
+  pdblst.remove('.ipynb_checkpoints')
+except:
+  pass
 columns = ['Name','Drug', 'pocket NUM','COM', 'dist']
 PocketDF = pd.DataFrame(columns = columns)
 for pdb in pdblst:
@@ -130,6 +134,10 @@ PocketDF.to_csv('PocketDF.csv')
 ##############################getting coms of Drugs###########################################
 os.chdir(orginal_path)
 pdblst = os.listdir()
+try:
+  pdblst.remove('.ipynb_checkpoints')
+except:
+  pass
 columns = ['Name','Drug','COM','cls pocket']
 DrugDF = pd.DataFrame(columns = columns)
 for pdb in pdblst:
@@ -157,7 +165,7 @@ DrugDF.to_csv('DrugDF.csv')
 ##########################################matching distaces##############################################
 
 os.chdir(path)
-pockets = pd.read_csv('PocketDf.csv')
+pockets = pd.read_csv('PocketDF.csv')
 os.chdir(orginal_path)
 drugs = pd.read_csv('DrugDF.csv')
 for indexi, drug in drugs.iterrows():
