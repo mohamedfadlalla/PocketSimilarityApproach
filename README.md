@@ -1,22 +1,50 @@
 # Pocket Similarity Approach
-This repository help reporduce the results of the manuscript at:
-https://chemrxiv.org/articles/preprint/COVID19_Approved_Drug_Repurposing_Pocket_Similarity_Approach/12722483
 
-this script does not include fpocket and pocketmatch algorithms; you need to do this from the orginal software repository:
-Pocketmatch 2.1:http://proline.physics.iisc.ernet.in/pocketmatch/
-Fpocket: https://github.com/Discngine/fpocket
+## Introduction
+The Pocket Similarity Approach is a set of Python scripts for automating pocket matching in protein structures. This repository supports the reproduction of results from a manuscript that explores drug repurposing through pocket similarity approaches.
 
-the script works fine on python 3.7.1
+## Technologies
+- Python 3.7.1
+- Biopython
+- Pandas
+- Numpy
 
-dependancies:
-1. Biopython
-2. Pandas
-3. Numpy
+## Installation
+To set up this project locally:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mohamedfadlalla/PocketSimilarityApproach.git
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install biopython pandas numpy
+   ```
 
-Drug_pocket_prepration.py:
-handle extracting the pocket of the drug
+## Usage
+The repository includes scripts for preparing drug and COVID-19 protein pockets for analysis:
+- `Drug_pocket_prepration.py`: Extracts the pocket of a drug.
+- `COVID19_pocket_prepration.py`: Handles the extraction of the COVID-19 protein pocket.
 
-COVID19_pocket_prepration.py:
-handle extracting the pocket COVID19
+Run the scripts as follows:
+```bash
+python Drug_pocket_prepration.py
+python COVID19_pocket_prepration.py
+```
 
-example of Fpocket results are in the zip files for COVID19 and Drug proteins structures
+Example output files for Fpocket results on COVID19 and drug proteins structures are provided in the respective `.rar` files.
+
+## Features
+- Automated extraction and processing of protein pockets.
+- Support for analyzing approved drug data (`HET_of_approved_drugs.txt`).
+
+## Contributing
+Contributions to the Pocket Similarity Approach are welcome. Please fork the repository and submit a pull request with your proposed changes.
+
+## License
+This project is licensed under the terms of the [MIT License](LICENSE.md).
+
+## Authors
+- Mohamed Fadlalla - *Initial work* - [mohamedfadlalla](https://github.com/mohamedfadlalla)
+
+## Acknowledgments
+- The manuscript associated with this work can be found [here](https://chemrxiv.org/articles/preprint/COVID19_Approved_Drug_Repurposing_Pocket_Similarity_Approach/12722483).
